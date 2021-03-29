@@ -427,6 +427,6 @@ $docWidth: 83%;
 // customHeadline
 .customHeadline {
   .notion-header-block > div {
-    text-decoration: underline 1px gray !important;
+    border-bottom: solid 1px gray !important;
   }
 }
