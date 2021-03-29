@@ -5,6 +5,28 @@ const notionAppId = "#notion-app";
 const notionAppInnerCls = ".notion-app-inner";
 const notionCursorListenerCls = ".notion-cursor-listener";
 
+export function customHeadline(isEnabled) {
+  try {
+    console.log(`feature: customHeadline: ${isEnabled}`);
+
+    onElementLoaded(notionAppInnerCls)
+      .then((isPresent) => {
+        if (isPresent) {
+          const el = getElement(notionAppInnerCls);
+          if (isEnabled) {
+            el.classList.add("customHeadline");
+          } else {
+            el.classList.remove("customHeadline");
+          }
+        }
+        return null;
+      })
+      .catch((e) => console.log(e));
+  } catch (e) {
+    console.log(e);
+  }
+}
+
 export function hideComments(isEnabled) {
   try {
     console.log(`feature: hideComments: ${isEnabled}`);

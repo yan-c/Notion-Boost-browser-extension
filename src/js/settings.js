@@ -16,6 +16,7 @@ export const defaultSettings = {
   addMoreHeightToPage: false,
   enableSpellcheckForCode: false,
   codeLineNumbers: false,
+  customHeadline: false,
 };
 
 export const settingDetails = [
@@ -101,6 +102,11 @@ export const settingDetails = [
   {
     func: "hideComments",
     name: "Hide comments section from pages",
+    desc: "",
+  },
+  {
+    func: "customHeadline",
+    name: "Custom head line",
     desc: "",
   },
 ];
