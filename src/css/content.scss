@@ -427,6 +427,9 @@ $docWidth: 83%;
 // customHeadline
 .customHeadline {
   .notion-header-block > div {
-    border-bottom: solid 1px gray !important;
+    border-bottom: solid 3px lightgray !important;
+  }
+  .notion-sub_header-block > div {
+    border-bottom: dashed 1px lightgray !important;
   }
 }
